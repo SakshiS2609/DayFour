@@ -45,16 +45,27 @@ System.out.println(str1.length());
 
 
 System.out.println(str1.toLowerCase());
-str1.to
+
 System.out.println(str1.toUpperCase());
 
 
 String fruit=" Mango";
 
+String paragraph="hello evveryone!!!.Today is wonderful sunny day. How are you all?";
+System.out.println(paragraph.split("[.]"));  /// split paragraph into single single lines
+String[] splittedPara= paragraph.split("[.]");
+for(String sentence : splittedPara)
+{
+	System.out.println(sentence);
+}
+
+/*for(String sentence:paragraph.split("[.]"));
+
+System.out.println(sentence);*/
 		
 	}
 	private static void checkString(String nullStr) {
-		// TODO Auto-generated method stub
+		// TODO Auto-generated method stb
 		if(nullStr.equals(""))
 		{
 			System.out.println("true");
